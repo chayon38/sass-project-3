@@ -1,0 +1,599 @@
+
+/***********************************************************************************************/
+/*  Responsive/adaptive stuff */
+/***********************************************************************************************/
+
+/** 980* 1280 **/
+
+$white-color: #fff;
+$blue-color: #338FFA;
+/*grid system*/
+@mixin grid($cols,$mgr){
+    display: flex;
+    flex-wrap: wrap;
+    .grid-col{
+        width: calc((100% - ((#{$cols} - 1) * #{$mgr})) / #{$cols} );
+        margin-right: $mgr;
+            &:nth-child(#{$cols}n){
+            margin-right: 0px;
+            margin-left: -1px;
+        }
+    }
+}
+.owl-three.owl-theme .owl-dots .owl-dot.active span, .owl-three.owl-theme .owl-dots .owl-dot:hover span {
+	background: #338FFA;
+}
+.menu-icon{
+	display: none;
+	margin-right: 30px;
+	cursor: pointer;
+	span{
+		display: block;
+		height: 2px;
+		width: 27px;
+		margin-bottom: 5px;
+		background: $white-color;
+		&:last-child{
+			margin-bottom: 0px;
+		}
+	}
+}
+.visible-phone{
+	display: none;
+}
+
+
+.nav-close{
+	display: none;
+	left: -10px;
+	position: relative;
+	top: -30px;
+	cursor: pointer;
+	img{
+		height: 18px;
+		width: auto;
+	}
+
+}
+
+
+@media only screen and (min-width: 960px) and (max-width: 980px){
+
+	
+}
+
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 1199px) {
+.container {
+	max-width: 960px !important;
+}
+.half-container {
+	width: 432px;
+}
+ul.menu-list{
+	li{
+		margin-right: 10px;
+	}
+}
+.search-area {
+	form{
+		margin-right: 10px;
+	}
+}
+.single-prize-row{
+	@include grid(3,30px);
+}
+.prize-content {
+	padding: 30px;
+	span{
+		margin-bottom: 15px;
+	}
+	&.blue-bg {
+	    top: -25px;
+		padding-top: 55px;
+		padding-bottom: 55px;
+	}
+}
+.content-area {
+	&.content-5{
+		h2{
+			font-size: 35px;
+		}
+		p {
+		    font-size: 18px;
+		    padding-right: 0;
+		}
+	}
+}
+.social-content {
+	padding: 20px 15px;
+	p{
+		font-size: 17px;
+	}
+}
+.social-content-image {
+	width: 40px;
+}
+.social-content-row{
+	@include grid(3,25px);
+}
+.counter-content {
+	img{
+		margin-right: 15px;
+	}
+}
+.review-row{
+	@include grid(3,35px);
+}
+.blog-content {
+	a.main-button{
+		margin-top: 30px;
+	}
+}
+
+}
+
+
+
+@media only screen and (max-width: 991px) {
+$main-heading-size: 39px;
+h1{
+	font-size: $main-heading-size;
+}
+header {
+	padding: 30px 31px 25px 32px;
+}
+nav {
+	margin-left: 0px;
+	margin-left: 0px;
+	width: 300px;
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100vh;
+	background: $white-color;
+	z-index: 2;
+	box-shadow: 0px 0px 20px -12px #29251F;
+	padding: 50px 25px 0px;
+	transition: all .3s;
+	right: -310px;
+	&.nav-show{
+		right: 0;
+	}
+	ul.list-left {
+		display: inline-block;
+		li{
+			a{
+				color: $blue-color;
+				margin-bottom: 5px;
+				&:hover{
+					color: $blue-color;
+				}
+			}
+		}
+	}
+}
+.nav-close{
+	display: block;
+}
+.menu-icon{
+	display: inline-block;
+}
+.search-area {
+	form{
+		margin-right: 28px;
+	}
+}
+.banner {
+	padding: 155px 0px 315px;
+	a.main-button {
+	    letter-spacing: .5px;
+	}
+	h1{
+		margin-bottom: 11px;
+	}
+	p{
+		width: 470px;
+		margin: 0 auto 27px;
+	}
+	a.main-button.white-bg-button{
+		margin-right: 15px;
+	}
+}
+.banner-image {
+	margin-top: -222px;
+	margin-bottom: 100px;
+	img{
+		max-width: 95%;
+		margin: 0 auto;
+	}
+}
+.banner-slider-area{
+	padding-bottom: 50px;
+	margin-bottom: 60px;
+	p{
+		span{
+			color: #313233;
+			font-weight: 600;
+		}
+	}
+	.banner-slider{
+		img{
+			max-height: 36px;
+		}
+	}
+}
+.content{
+	&.content-image-left-mg{
+		margin-right: 35px;
+	}
+	&.phone-image{
+		padding: 0;
+		img{
+			width: 90%;
+			margin: 0 auto;
+		}
+	}
+	p{
+		padding-right: 15px;
+	}
+}
+.slider-two-area {
+	p{
+		width: 390px;
+	}
+}
+.slider-two-img{
+	img{
+		border-radius: 0px;
+	}
+}
+.content-area-2 {
+	&.content-area{
+		h1{
+			font-size: 37px;
+			color: #000000;
+		}
+	}
+}
+.content-area-2 {
+	.content{
+		ul{
+			margin-bottom: 55px;
+		}
+		img{
+			margin-left: -15px;
+		}
+	}
+}
+.content-two-row,.review-row,.single-prize-row,.social-content-row{
+	justify-content: center;
+	@include grid(1,0px);
+	.grid-col{
+		margin-bottom: 48px;
+		width: 522px;
+	}
+}
+.content-two {
+	padding: 80px 29px 35px;
+}
+.content-area-3{
+	a.main-button{
+		margin-top: 0;
+	}
+}
+.review-area {
+	padding: 90px 0px 40px;
+}
+.review-row{
+	.grid-col{
+		margin-bottom: 38px;
+	}
+}
+.single-prize-row{
+	.grid-col{
+		margin-bottom: 60px;
+	}
+}
+.prizing-headeing {
+	margin-bottom: 50px;
+	p{
+		width: 505px;
+	}
+}
+.prizing-area {
+	padding: 85px 0px 30px;
+}
+.prize-content{
+	&.blue-bg {
+		top: 0;
+	}
+}
+.social-content-row{
+	.grid-col{
+		margin-bottom: 20px;
+	}
+}
+.counter-area {
+	padding-bottom: 25px;
+}
+.counter-content {
+	margin-bottom: 40px;
+	span{
+		font-size: 40px;
+	}
+	img{
+		margin-right: 30px;
+	}
+}
+.half-container {
+	width: 325px;
+}
+.content-area{
+	&.content-5{
+		padding: 60px 0px 60px 0px;
+		p{
+			font-size: 19px;
+		}
+		h2{
+			font-size: 36px;
+		}
+	}
+}
+.footer-top {
+	align-items: center;
+}
+.footer-menu {
+	width: 35%;
+	flex-wrap: wrap;
+}
+
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers)  800*1280 , 768*1024 */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	
+
+}
+/* All Mobile Sizes (devices and browser) 360*640 */
+@media only screen and (max-width: 767px) {
+
+/*variable call*/
+$main-heading-size: 36px;
+$h2-size: 25px;
+$h3-size: 27px;
+$h4-size: 18px;
+$h6-size: 16px;
+
+
+h1{
+	font-size: $main-heading-size;
+}
+h2{
+	font-size: $h2-size;
+}
+h3{
+	font-size: $h3-size;
+	line-height: 1.6;
+}
+h4{
+	font-size: $h4-size;
+	line-height: 1.5;
+}
+h6{
+	font-size: $h6-size;
+}
+
+
+nav {
+	width: 200px;
+}
+.search-area {
+	form{
+		display: none;
+	}
+}
+
+
+.banner {
+	padding: 155px 0px 250px;
+	h1{
+		line-height: 1.4;
+		width: 90%;
+		margin: 0 auto 11px;
+		font-size: 30px;
+	}
+}
+.banner-image {
+	margin-top: -151px;
+	margin-bottom: 60px;
+	img{
+		max-width: 77%;
+	}
+}
+.content{
+	&.content-top-text{
+		margin-bottom: 50px;
+	}
+	&.content-image-left-mg{
+		margin-right: 0;
+		margin-bottom: 50px;
+	}
+}
+
+.content-area {
+	.align-center {
+		justify-content: center;
+	}
+}
+.slider-two-area {
+	h3{
+		width: 420px;
+	}
+}
+.slider-two-img {
+	margin: 0px 25px;
+	img{
+		border-radius: 10px;
+	}
+}
+.content-area-2  {
+	&.content-area{
+		h1{
+			font-size: 29px;
+		}
+	}
+}
+.content-two-heading {
+	h3{
+		width: 401px;
+	}
+}
+.half-container {
+	margin-bottom: 50px;
+	width: 450px;
+}
+.content-area {
+	&.content-5{
+		h2{
+			font-size: 28px;
+		}
+	}
+}
+
+.blog-area {
+	padding: 0 0px;
+	margin-bottom: 40px;
+}
+.social-content-area {
+	padding-bottom: 15px;
+}
+.content-area {
+	margin-bottom: 26px;
+}
+
+.visible-phone{
+	display: block;
+}
+.hide-phone{
+	display: none;
+}
+.footer-logo {
+	margin-bottom: 50px;
+}
+.footer-top {
+	flex-flow: column;
+	align-items: flex-start;
+	margin-bottom: 0px;
+	padding: 25px 0px 20px;
+	a.footer-logo{
+		img{
+			max-height: 40px;
+			height: auto;
+		}
+	}
+}
+.footer-menu {
+	width: 100%;
+	flex-wrap: wrap;
+	margin-bottom: 50px;
+}
+.footer-bottom {
+	p{
+		margin-bottom: 20px;
+		&.right{
+			text-align: left;
+			margin: 0;
+		}
+	}
+}
+
+.content-two-row,.review-row,.single-prize-row,.social-content-row{
+	.grid-col{
+		width: 440px;
+	}
+}
+.content-5-row{
+	@include grid(1,0px);
+}
+
+}
+
+
+@media only screen and (max-width: 575px) {
+.search-area {
+	a.main-button {
+		display: none;
+	}
+}
+.menu-icon {
+	margin-right: 0;
+}
+.banner {
+	padding: 155px 0px 200px;
+	p {
+		width: auto;
+	}
+	a.main-button{
+		&.white-bg-button{
+			margin-bottom: 20px;
+			margin-right: 0;
+		}
+	}
+}
+.banner-image {
+	margin-top: -110px;
+	img{
+		max-width: 85%;
+	}
+}
+.slider-two-area {
+	h3,p{
+		width: auto;
+	}
+}
+.content-area-2 .content p {
+	padding-right: 0;
+}
+.content-two-heading {
+	h3{
+		width: auto;
+	}
+}
+.counter-content {
+	img{
+		margin-right: 16px;
+	}
+	span {
+		font-size: 32px;
+	}
+	p{
+		font-size: 12px;
+	}
+}
+.blog-heading p {
+	width: auto;
+}
+.prizing-headeing p {
+	width: auto;
+}
+.half-container {
+	width: 100%;
+	padding: 0px 15px;
+}
+.content-area.content-5 img {
+	padding: 0px 15px;
+}
+
+}
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) 320*480  */
+@media only screen and (max-width: 479px) {
+
+}
