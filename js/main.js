@@ -1,4 +1,6 @@
 $(document).ready(function(){
+	 $('.nav').onePageNav();
+	 
 	 $(".search-ico").click(function(){
 	    $(".search-option").slideToggle();
 	  });
@@ -68,5 +70,34 @@ $(document).ready(function(){
 			}
 		}
 	})
+
+
+	var duration = 1000;
+    jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() > 400) {
+            jQuery('.to-top').fadeIn(duration);
+        } else {
+            jQuery('.to-top').fadeOut(duration);
+        }
+    });
+
+    jQuery('.to-top').click(function(event) {
+        event.preventDefault();
+        jQuery('html').animate({scrollTop: 0}, duration);
+        return false;
+    })
+
+    jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() > 350) {
+            jQuery('.header-2').fadeIn(duration);
+        } else {
+            jQuery('.header-2').fadeOut(duration);
+        }
+    });
+
+
+
+
+
 })
 

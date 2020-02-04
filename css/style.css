@@ -95,7 +95,22 @@ header {
   left: 0;
   right: 0;
   padding: 25px 31px 25px 32px; }
+  header.header-2 {
+    z-index: 12;
+    position: fixed;
+    background: #fff;
+    padding: 13px 31px 15px 32px;
+    box-shadow: 0px 0px 12px 0px #ddd; }
+    header.header-2 ul.menu-list li a {
+      color: #000; }
+      header.header-2 ul.menu-list li a:hover {
+        color: #338FFA; }
+    header.header-2 .menu-icon span {
+      background: #000; }
 
+/*.visible-header{
+	display: none;
+}*/
 .header-main {
   display: flex;
   justify-content: space-between;
@@ -608,5 +623,24 @@ ul.menu-list li {
     font-size: 15px; }
     .footer-bottom p.right {
       text-align: right; }
+
+.slicknav_menu {
+  display: none; }
+
+.go-to-top {
+  background: #338FFA;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 10; }
+  .go-to-top img {
+    height: 7px;
+    margin: 0 auto;
+    margin-top: 0px;
+    display: block;
+    margin-top: 15px; }
 
 /*# sourceMappingURL=style.css.map */

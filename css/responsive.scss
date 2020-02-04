@@ -143,9 +143,21 @@ h1{
 }
 header {
 	padding: 30px 31px 25px 32px;
+	&.header-2{
+		ul.menu-list{
+			li{
+				a{
+					color: $blue-color;
+					&:hover{
+						color: #000;
+					}
+				}
+			}
+		}
+	}
 }
+
 nav {
-	margin-left: 0px;
 	margin-left: 0px;
 	width: 300px;
 	position: fixed;
@@ -463,8 +475,8 @@ nav {
 }
 
 .blog-area {
-	padding: 0 0px;
-	margin-bottom: 40px;
+	padding: 45px 0px;
+	margin-bottom: 0;
 }
 .social-content-area {
 	padding-bottom: 15px;
@@ -527,11 +539,17 @@ nav {
 		display: none;
 	}
 }
+header{
+	padding: 13px 15px 15px;
+	&.header-2{
+		padding: 13px 15px 15px;
+	}
+}
 .menu-icon {
 	margin-right: 0;
 }
 .banner {
-	padding: 155px 0px 200px;
+	padding: 115px 0px 160px;
 	p {
 		width: auto;
 	}
@@ -542,28 +560,103 @@ nav {
 		}
 	}
 }
+.banner-slider-area {
+	padding-bottom: 45px;
+	margin-bottom: 45px;
+}
+.content-area {
+	&.border-bottom {
+		padding-bottom: 16px;
+	}
+	&.extra-class-1{
+		margin: 50px auto;
+	}
+}
 .banner-image {
 	margin-top: -110px;
 	img{
 		max-width: 85%;
 	}
 }
+.slider-text {
+	margin-bottom: 38px;
+	padding: 0px 15px;
+}
 .slider-two-area {
+	padding: 58px 0px 45px;
 	h3,p{
 		width: auto;
 	}
 }
-.content-area-2 .content p {
-	padding-right: 0;
+.content-area-2 {
+	.content{
+		p{
+			padding-right: 0;
+		}
+		ul {
+			li{
+				margin-right: 20px;
+				a{
+					color: #338FFA;
+					font-size: 25px;
+				}
+			}
+		}
+	}
+	&.content-area{
+		margin-bottom: 40px;
+		padding-top: 63px;
+	}
+}
+.content-two {
+	padding: 45px 15px 35px;
+}
+.content-two-row .grid-col, .review-row .grid-col, .single-prize-row .grid-col, .social-content-row .grid-col {
+	margin-bottom: 30px;
+}
+.content-area-2 .content ul li a {
+	color: #338FFA;
+	font-size: 25px;
 }
 .content-two-heading {
 	h3{
 		width: auto;
 	}
 }
+
+.content-right-col {
+	h3{
+		margin-bottom: 30px;
+	}
+}
+.content {
+	&.phone-image {
+		margin-bottom: 10px;
+		margin-top: 30px;
+	}
+}
+.content-right-col {
+	h6{
+		margin-bottom: 10px;
+	}
+	p{
+		margin-bottom: 27px;
+	}
+}
+.content-area-4 {
+	&.content-area.border-bottom{
+		padding-bottom: 50px;
+	}
+}
+.counter-area {
+	padding-bottom: 5px;
+}
 .counter-content {
 	img{
-		margin-right: 16px;
+		margin-right: 13px;
+		max-height: 24px;
+		position: relative;
+		top: -4px;
 	}
 	span {
 		font-size: 32px;
@@ -572,12 +665,22 @@ nav {
 		font-size: 12px;
 	}
 }
+.review-area {
+	padding: 55px 0px 15px;
+}
 .blog-heading p {
 	width: auto;
 }
-.prizing-headeing p {
-	width: auto;
+.prizing-area {
+	padding: 50px 0px 30px;
 }
+.prizing-headeing {
+	margin-bottom: 35px;
+	p{
+		width: auto;
+	}
+}
+
 .half-container {
 	width: 100%;
 	padding: 0px 15px;

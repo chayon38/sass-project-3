@@ -110,9 +110,12 @@
 
   header {
     padding: 30px 31px 25px 32px; }
+    header.header-2 ul.menu-list li a {
+      color: #338FFA; }
+      header.header-2 ul.menu-list li a:hover {
+        color: #000; }
 
   nav {
-    margin-left: 0px;
     margin-left: 0px;
     width: 300px;
     position: fixed;
@@ -338,8 +341,8 @@
     font-size: 28px; }
 
   .blog-area {
-    padding: 0 0px;
-    margin-bottom: 40px; }
+    padding: 45px 0px;
+    margin-bottom: 0; }
 
   .social-content-area {
     padding-bottom: 15px; }
@@ -392,43 +395,110 @@
   .search-area a.main-button {
     display: none; }
 
+  header {
+    padding: 13px 15px 15px; }
+    header.header-2 {
+      padding: 13px 15px 15px; }
+
   .menu-icon {
     margin-right: 0; }
 
   .banner {
-    padding: 155px 0px 200px; }
+    padding: 115px 0px 160px; }
     .banner p {
       width: auto; }
     .banner a.main-button.white-bg-button {
       margin-bottom: 20px;
       margin-right: 0; }
 
+  .banner-slider-area {
+    padding-bottom: 45px;
+    margin-bottom: 45px; }
+
+  .content-area.border-bottom {
+    padding-bottom: 16px; }
+  .content-area.extra-class-1 {
+    margin: 50px auto; }
+
   .banner-image {
     margin-top: -110px; }
     .banner-image img {
       max-width: 85%; }
 
-  .slider-two-area h3, .slider-two-area p {
-    width: auto; }
+  .slider-text {
+    margin-bottom: 38px;
+    padding: 0px 15px; }
+
+  .slider-two-area {
+    padding: 58px 0px 45px; }
+    .slider-two-area h3, .slider-two-area p {
+      width: auto; }
 
   .content-area-2 .content p {
     padding-right: 0; }
+  .content-area-2 .content ul li {
+    margin-right: 20px; }
+    .content-area-2 .content ul li a {
+      color: #338FFA;
+      font-size: 25px; }
+  .content-area-2.content-area {
+    margin-bottom: 40px;
+    padding-top: 63px; }
+
+  .content-two {
+    padding: 45px 15px 35px; }
+
+  .content-two-row .grid-col, .review-row .grid-col, .single-prize-row .grid-col, .social-content-row .grid-col {
+    margin-bottom: 30px; }
+
+  .content-area-2 .content ul li a {
+    color: #338FFA;
+    font-size: 25px; }
 
   .content-two-heading h3 {
     width: auto; }
 
+  .content-right-col h3 {
+    margin-bottom: 30px; }
+
+  .content.phone-image {
+    margin-bottom: 10px;
+    margin-top: 30px; }
+
+  .content-right-col h6 {
+    margin-bottom: 10px; }
+  .content-right-col p {
+    margin-bottom: 27px; }
+
+  .content-area-4.content-area.border-bottom {
+    padding-bottom: 50px; }
+
+  .counter-area {
+    padding-bottom: 5px; }
+
   .counter-content img {
-    margin-right: 16px; }
+    margin-right: 13px;
+    max-height: 24px;
+    position: relative;
+    top: -4px; }
   .counter-content span {
     font-size: 32px; }
   .counter-content p {
     font-size: 12px; }
 
+  .review-area {
+    padding: 55px 0px 15px; }
+
   .blog-heading p {
     width: auto; }
 
-  .prizing-headeing p {
-    width: auto; }
+  .prizing-area {
+    padding: 50px 0px 30px; }
+
+  .prizing-headeing {
+    margin-bottom: 35px; }
+    .prizing-headeing p {
+      width: auto; }
 
   .half-container {
     width: 100%;
